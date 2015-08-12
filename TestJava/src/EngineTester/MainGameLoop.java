@@ -16,10 +16,15 @@ public class MainGameLoop {
 		Loader loader = new Loader();
 		Renderer renderer = new Renderer();
 		
+		//Will render a rectangle using 2 triangles
 		float[] vertices = { -0.5f, 0.5f, 0f, -0.5f, -0.5f, 0f, 0.5f, -0.5f, 0f, 0.5f, -0.5f, 0f, 0.5f, 0.5f, 0f, -0.5f, 0.5f, 0f
 		};
 		
 		RawModel model =  loader.loadToVAO(vertices);
+		
+		int a=0;
+		a+=2;
+		System.out.println(a);
 		
 		while(!Display.isCloseRequested()) {
 			
@@ -30,7 +35,7 @@ public class MainGameLoop {
 			
 		}
 		
-		
+		//This is a useless comment for testing git repo and merge
 		loader.cleanUp();
 		DisplayManager.closeDisplay();
 
