@@ -30,7 +30,7 @@ public class MainGameLoop {
 			
 		}
 		
-		
+		//This is a useless comment for testing git repo and merge
 		loader.cleanUp();
 		DisplayManager.closeDisplay();
 
